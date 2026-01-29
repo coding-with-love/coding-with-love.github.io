@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding with Love - Apps</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #FFD700;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #9B7FD1;
+            font-size: 1.2rem;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .app-card {
+            background: rgba(107, 78, 171, 0.15);
+            border: 1px solid #6B4EAB;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(107, 78, 171, 0.3);
+        }
+
+        .app-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+        }
+
+        .app-name {
+            color: #FFD700;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .app-description {
+            color: #b8a5d6;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .app-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .app-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: rgba(155, 127, 209, 0.2);
+            transition: background 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .app-links a:hover {
+            background: rgba(155, 127, 209, 0.4);
+        }
+
+        .play-store {
+            background: rgba(52, 168, 83, 0.2) !important;
+        }
+
+        .play-store:hover {
+            background: rgba(52, 168, 83, 0.4) !important;
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #6B4EAB;
+        }
+
+        .footer-brand {
+            color: #9B7FD1;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-love {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .footer-love span {
+            color: #ff6b6b;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">💻❤️</div>
+            <h1>Coding with Love</h1>
+            <p class="tagline">Aplicaciones creadas con pasion para mejorar tu vida</p>
+        </header>
+
+        <main>
+            <div class="apps-grid">
+                <!-- App 1: Sueno Dulce Bebe -->
+                <div class="app-card">
+                    <div class="app-icon">🌙👶💤</div>
+                    <h2 class="app-name">Sueno Dulce Bebe</h2>
+                    <p class="app-description">
+                        Sonidos relajantes y ruido blanco para ayudar a tu bebe a dormir placidamente.
+                    </p>
+                    <div class="app-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.suenodulcebebe.app" class="play-store" target="_blank">
+                            📱 Descargar en Google Play
+                        </a>
+                        <a href="./sueno-dulce-bebe/privacy-policy.html">
+                            🔒 Politica de Privacidad
+                        </a>
+                    </div>
+                </div>
+
+                <!-- App 2: Lista de Tareas -->
+                <div class="app-card">
+                    <div class="app-icon">✅📝📋</div>
+                    <h2 class="app-name">Lista de Tareas</h2>
+                    <p class="app-description">
+                        Organiza tu dia con esta app minimalista de gestion de tareas.
+                    </p>
+                    <div class="app-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.todolist.app" class="play-store" target="_blank">
+                            📱 Descargar en Google Play
+                        </a>
+                        <a href="./lista-tareas/privacy-policy.html">
+                            🔒 Politica de Privacidad
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Espacio para futuras apps -->
+                <!--
+                <div class="app-card">
+                    <div class="app-icon">🚀</div>
+                    <h2 class="app-name">Proxima App</h2>
+                    <p class="app-description">
+                        Descripcion de la proxima app.
+                    </p>
+                    <div class="app-links">
+                        <a href="#" class="play-store">
+                            📱 Proximamente
+                        </a>
+                        <a href="./nueva-app/privacy-policy.html">
+                            🔒 Politica de Privacidad
+                        </a>
+                    </div>
+                </div>
+                -->
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-brand">Coding with Love</div>
+            <div class="footer-love">
+                Hecho con <span>❤</span> para ti
+            </div>
+            <div class="contact">
+                <p>📧 <a href="mailto:navisolutions94@gmail.com">navisolutions94@gmail.com</a></p>
+            </div>
+            <p style="margin-top: 15px; color: #666; font-size: 0.85rem;">
+                © 2025 Coding with Love. Todos los derechos reservados.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
