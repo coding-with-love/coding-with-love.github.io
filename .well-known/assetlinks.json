@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.suenodulce.bebe",
+      "sha256_cert_fingerprints": [
+        "5A:D4:FC:C6:65:0A:9D:B1:52:04:E3:62:41:3C:A2:62:39:FD:BD:59:DD:5F:80:0C:D8:EA:55:15:CB:FD:7C:38"
+      ]
+    }
+  }
+]
