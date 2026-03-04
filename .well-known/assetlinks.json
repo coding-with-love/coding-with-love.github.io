@@ -11,5 +11,18 @@
         "5A:D4:FC:C6:65:0A:9D:B1:52:04:E3:62:41:3C:A2:62:39:FD:BD:59:DD:5F:80:0C:D8:EA:55:15:CB:FD:7C:38"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.goldedition2048.app",
+      "sha256_cert_fingerprints": [
+        "E3:CA:C6:F0:8C:AC:A5:05:67:FF:F2:53:51:CC:FA:26:36:65:42:03:5F:F1:C1:D0:DC:33:3E:BC:68:09:B7:B2"
+      ]
+    }
   }
 ]
