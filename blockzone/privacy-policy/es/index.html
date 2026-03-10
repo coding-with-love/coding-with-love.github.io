@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - BlockZone Puzzle Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d0d1a 0%, #111128 50%, #0d0d1a 100%);
+            min-height: 100vh;
+            color: #e0e0e0;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Language switcher */
+        .lang-switcher {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .lang-btn {
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: 1px solid #6B4EAB;
+        }
+
+        .lang-btn.active {
+            background: #6B4EAB;
+            color: #fff;
+        }
+
+        .lang-btn:not(.active) {
+            background: transparent;
+            color: #9B7FD1;
+        }
+
+        .lang-btn:not(.active):hover {
+            background: rgba(107, 78, 171, 0.2);
+            text-decoration: none;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #6B4EAB;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #9B7FD1;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .app-name {
+            color: #6C63FF;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .last-updated {
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: #9B7FD1;
+            font-size: 1.4rem;
+            margin: 30px 0 15px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #6B4EAB;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: rgba(108, 99, 255, 0.12);
+            border-left: 4px solid #6C63FF;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .emoji {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+
+        a {
+            color: #43E97B;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(107, 78, 171, 0.3);
+            border-radius: 8px;
+            color: #e0e0e0;
+            transition: background 0.3s;
+        }
+
+        .back-link:hover {
+            background: rgba(107, 78, 171, 0.5);
+            text-decoration: none;
+        }
+
+        .iap-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+
+        .iap-table th {
+            background: rgba(108, 99, 255, 0.25);
+            color: #9B7FD1;
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid #6B4EAB;
+        }
+
+        .iap-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(107, 78, 171, 0.2);
+        }
+
+        .iap-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #6B4EAB;
+            text-align: center;
+        }
+
+        .footer-brand {
+            color: #9B7FD1;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-love {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .footer-love span {
+            color: #ff6b6b;
+        }
+
+        .contact-box {
+            background: rgba(67, 233, 123, 0.08);
+            border: 1px solid #43E97B;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .contact-box a {
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px 15px; }
+            h1 { font-size: 1.6rem; }
+            .logo { font-size: 2.5rem; }
+            .iap-table { font-size: 0.85rem; }
+            .iap-table th, .iap-table td { padding: 8px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Nav -->
+        <a href="../../../index.html" class="back-link">&larr; Coding with Love</a>
+
+        <!-- Language switcher -->
+        <div class="lang-switcher">
+            <a href="../index.html" class="lang-btn">🇺🇸 English</a>
+            <a href="./index.html" class="lang-btn active">🇪🇸 Español</a>
+        </div>
+
+        <header>
+            <div class="logo">🧩🟦🟩</div>
+            <h1>Política de Privacidad</h1>
+            <div class="app-name">BlockZone — Puzzle Game</div>
+            <div class="last-updated">Última actualización: Marzo 2026</div>
+        </header>
+
+        <main>
+
+            <!-- Intro -->
+            <section>
+                <p>
+                    En <strong>Coding with Love</strong>, desarrolladores de <strong>BlockZone — Puzzle Game</strong>,
+                    nos tomamos muy en serio la privacidad de nuestros usuarios. Esta Política de Privacidad describe
+                    cómo manejamos la información cuando utilizas nuestra aplicación en dispositivos Android.
+                </p>
+                <div class="highlight-box">
+                    <p>
+                        <strong>Resumen:</strong> BlockZone <strong>no recopila datos personales</strong>.
+                        Todos los datos del juego (puntuaciones, configuración, estadísticas) se almacenan
+                        únicamente en tu dispositivo. La app utiliza Google AdMob para publicidad, Firebase
+                        para reportes de errores, y Google Play Billing para compras dentro de la app.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Información que recopilamos -->
+            <section>
+                <h2><span class="emoji">📱</span>Información que Recopilamos</h2>
+                <p>
+                    <strong>No recopilamos ningún dato personal.</strong> BlockZone no:
+                </p>
+                <ul>
+                    <li>Recopila nombres, correos electrónicos ni información personal identificable</li>
+                    <li>Recopila datos de ubicación (GPS o basada en red)</li>
+                    <li>Accede a tus contactos, cámara, micrófono ni almacenamiento externo</li>
+                    <li>Transmite datos del juego (puntuaciones, configuración) a nuestros servidores</li>
+                    <li>Ejecuta ningún servicio propio de seguimiento o análisis</li>
+                </ul>
+            </section>
+
+            <!-- Datos almacenados localmente -->
+            <section>
+                <h2><span class="emoji">💾</span>Datos Almacenados Localmente en tu Dispositivo</h2>
+                <p>
+                    Los siguientes datos se almacenan exclusivamente en tu dispositivo mediante la
+                    base de datos Room de Android y DataStore — nunca salen de tu dispositivo:
+                </p>
+                <ul>
+                    <li><strong>Puntuaciones:</strong> mejor puntaje por modo de juego e historial de partidas recientes</li>
+                    <li><strong>Estadísticas:</strong> total de partidas jugadas, líneas eliminadas y racha de días consecutivos</li>
+                    <li><strong>Preferencias:</strong> tema seleccionado (claro/oscuro/auto), configuración de vibración y sonido, tamaño de cuadrícula y tema de bloques</li>
+                    <li><strong>Estado sin banners:</strong> marca de tiempo de cuándo ganaste el período de 7 días sin banners mediante video recompensado</li>
+                    <li><strong>Estado de compras:</strong> si has adquirido la versión sin anuncios permanente o packs de skins (verificado localmente)</li>
+                </ul>
+                <p>Toda esta información:</p>
+                <ul>
+                    <li>Permanece completamente en tu dispositivo</li>
+                    <li>No es accesible para otras aplicaciones</li>
+                    <li>Se elimina automáticamente al desinstalar la app</li>
+                </ul>
+            </section>
+
+            <!-- Publicidad -->
+            <section>
+                <h2><span class="emoji">📢</span>Publicidad — Google AdMob</h2>
+                <p>
+                    BlockZone muestra anuncios a través de <strong>Google AdMob</strong>. AdMob puede recopilar
+                    cierta información para mostrar anuncios relevantes, incluyendo:
+                </p>
+                <ul>
+                    <li>Identificador publicitario del dispositivo</li>
+                    <li>Información general del dispositivo (modelo, versión del sistema operativo)</li>
+                    <li>Datos de interacción con los anuncios (impresiones, clics)</li>
+                    <li>Dirección IP (para segmentación geográfica general)</li>
+                </ul>
+                <p>
+                    Esta recopilación la realiza directamente Google, no nosotros. Puedes consultar cómo
+                    Google maneja esta información en la
+                    <a href="https://policies.google.com/privacy" target="_blank">Política de Privacidad de Google</a>.
+                </p>
+
+                <h2><span class="emoji">🎬</span>Anuncios Recompensados — Función Sin Banners</h2>
+                <p>
+                    BlockZone ofrece la opción de <strong>ver un video recompensado para eliminar los banners publicitarios
+                    durante 7 días</strong>, sin costo alguno. Cuando obtienes esta recompensa:
+                </p>
+                <ul>
+                    <li>Se guarda una marca de tiempo en el almacenamiento local de tu dispositivo</li>
+                    <li>Los banners se ocultan hasta que transcurran 7 días desde esa marca de tiempo</li>
+                    <li>No se envía ningún dato personal a nuestros servidores como resultado de esta acción</li>
+                    <li>Puedes renovar el período de 7 días antes de que expire</li>
+                </ul>
+                <p>
+                    Este anuncio recompensado también es proporcionado por Google AdMob y está sujeto
+                    a las mismas prácticas de datos descritas anteriormente.
+                </p>
+
+                <h2><span class="emoji">🚫</span>Consentimiento de Publicidad — GDPR / CCPA</h2>
+                <p>
+                    BlockZone utiliza la <strong>Plataforma de Mensajería al Usuario (UMP)</strong> de Google para
+                    recopilar tu consentimiento para publicidad personalizada donde lo exija la ley aplicable
+                    (incluido el GDPR de la UE y la CCPA de California). Es posible que se te muestre un diálogo
+                    de consentimiento al iniciar la app por primera vez. Tu elección se almacena localmente y puede
+                    modificarse en cualquier momento desde la configuración de la app.
+                </p>
+            </section>
+
+            <!-- Firebase -->
+            <section>
+                <h2><span class="emoji">🔥</span>Análisis y Reportes de Errores — Firebase</h2>
+                <p>
+                    BlockZone utiliza <strong>Firebase Analytics</strong> y <strong>Firebase Crashlytics</strong>
+                    (ambos de Google) para mejorar la experiencia de la app:
+                </p>
+                <ul>
+                    <li><strong>Firebase Analytics:</strong> recopila datos de uso agregados y anónimos (por ejemplo, popularidad de modos de juego, uso de funciones). Ninguna información personal identificable está vinculada a estos eventos.</li>
+                    <li><strong>Firebase Crashlytics:</strong> reporta automáticamente fallos y errores de la app, incluyendo información del dispositivo (modelo, versión del SO, versión de la app) y un rastro del error. Estos datos nos ayudan a identificar y corregir bugs rápidamente.</li>
+                </ul>
+                <p>
+                    Puedes consultar las prácticas de datos de Firebase en
+                    <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a>.
+                </p>
+            </section>
+
+            <!-- Compras -->
+            <section>
+                <h2><span class="emoji">💳</span>Compras Dentro de la Aplicación</h2>
+                <p>
+                    BlockZone ofrece compras opcionales dentro de la app a través de <strong>Google Play Billing</strong>.
+                    Todo el procesamiento de pagos es gestionado íntegramente por Google — nosotros nunca recibimos,
+                    almacenamos ni procesamos tu información de pago o tarjeta de crédito.
+                </p>
+                <table class="iap-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Qué incluye</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sin Anuncios Permanente</td>
+                            <td>$2.99</td>
+                            <td>Elimina todos los anuncios para siempre</td>
+                        </tr>
+                        <tr>
+                            <td>Skin Neón</td>
+                            <td>$0.99</td>
+                            <td>Desbloquea el tema de bloques Neón</td>
+                        </tr>
+                        <tr>
+                            <td>Skin Pastel</td>
+                            <td>$0.99</td>
+                            <td>Desbloquea el tema de bloques Pastel</td>
+                        </tr>
+                        <tr>
+                            <td>Skin Oscuro</td>
+                            <td>$0.99</td>
+                            <td>Desbloquea el tema de bloques Oscuro</td>
+                        </tr>
+                        <tr>
+                            <td>Skin Retro</td>
+                            <td>$0.99</td>
+                            <td>Desbloquea el tema de bloques Retro</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    El estado de las compras se verifica mediante la biblioteca Google Play Billing y se
+                    almacena localmente en tu dispositivo. Para consultas sobre reembolsos, por favor revisa
+                    las <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">políticas de reembolso de Google Play</a>.
+                </p>
+            </section>
+
+            <!-- Permisos -->
+            <section>
+                <h2><span class="emoji">🔑</span>Permisos de la App</h2>
+                <p>BlockZone solicita los siguientes permisos de Android:</p>
+                <ul>
+                    <li><strong>INTERNET:</strong> necesario para cargar y mostrar anuncios, enviar reportes de errores y validar compras</li>
+                    <li><strong>VIBRATE:</strong> proporciona retroalimentación háptica al colocar bloques y eliminar líneas (puede desactivarse en Configuración)</li>
+                    <li><strong>com.android.vending.BILLING:</strong> necesario para procesar compras dentro de la app a través de Google Play</li>
+                </ul>
+                <p>
+                    <strong>No</strong> solicitamos acceso a tu cámara, micrófono, ubicación, contactos,
+                    teléfono, almacenamiento externo ni ningún otro permiso sensible del sistema.
+                </p>
+            </section>
+
+            <!-- Seguridad -->
+            <section>
+                <h2><span class="emoji">🔒</span>Seguridad de los Datos</h2>
+                <p>
+                    Dado que no recopilamos datos personales, no hay datos personales almacenados en
+                    nuestros servidores que proteger. Los datos del juego almacenados localmente en tu
+                    dispositivo se mantienen dentro del sandbox de la aplicación de Android, protegidos por
+                    el modelo de seguridad integrado de Android e inaccesibles para otras apps.
+                </p>
+            </section>
+
+            <!-- Menores -->
+            <section>
+                <h2><span class="emoji">👶</span>Privacidad de los Menores</h2>
+                <p>
+                    BlockZone es un juego de puzzle casual apto para todas las edades. No recopilamos
+                    intencionalmente información personal de niños menores de 13 años (o la edad aplicable
+                    en tu jurisdicción). La app cumple con la <strong>COPPA</strong> (Ley de Protección
+                    de Privacidad Infantil en Línea) al no recopilar ningún dato personal de ningún usuario.
+                    Los anuncios mostrados en la app cumplen con las políticas de contenido familiar de Google.
+                </p>
+            </section>
+
+            <!-- Servicios de terceros -->
+            <section>
+                <h2><span class="emoji">🔗</span>Servicios de Terceros</h2>
+                <p>Esta app utiliza los siguientes servicios de terceros, cada uno con sus propias políticas de privacidad:</p>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy" target="_blank">Política de Privacidad de Google</a> (AdMob, Firebase, Play Billing, Play Review)</li>
+                    <li><a href="https://firebase.google.com/support/privacy" target="_blank">Privacidad y Seguridad de Firebase</a></li>
+                </ul>
+            </section>
+
+            <!-- Cambios -->
+            <section>
+                <h2><span class="emoji">🔄</span>Cambios en esta Política</h2>
+                <p>
+                    Podemos actualizar esta Política de Privacidad ocasionalmente. Cualquier cambio será publicado
+                    en esta página con una fecha de "Última actualización" revisada. Te recomendamos revisar esta
+                    política periódicamente. El uso continuado de la app después de cualquier cambio constituye
+                    tu aceptación de la política actualizada.
+                </p>
+            </section>
+
+            <!-- Contacto -->
+            <section>
+                <h2><span class="emoji">✉️</span>Contáctanos</h2>
+                <p>
+                    Si tienes preguntas, dudas o solicitudes relacionadas con esta Política de Privacidad o
+                    las prácticas de datos de BlockZone, no dudes en contactarnos:
+                </p>
+                <div class="contact-box">
+                    <p><strong>Coding with Love</strong></p>
+                    <p>📧 <a href="mailto:navisolutions94@gmail.com">navisolutions94@gmail.com</a></p>
+                </div>
+                <p>Responderemos a todas las consultas en un plazo razonable.</p>
+            </section>
+
+            <!-- Consentimiento -->
+            <section>
+                <h2><span class="emoji">✅</span>Tu Consentimiento</h2>
+                <p>
+                    Al descargar y utilizar BlockZone, aceptas los términos de esta Política de Privacidad.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-brand">Coding with Love</div>
+            <div class="footer-love">
+                Hecho con <span>&hearts;</span> para ti
+            </div>
+            <p style="margin-top: 15px; color: #666; font-size: 0.85rem;">
+                &copy; 2026 BlockZone — Puzzle Game. Todos los derechos reservados.
+            </p>
+        </footer>
+
+    </div>
+</body>
+</html>
