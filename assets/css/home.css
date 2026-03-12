@@ -1,0 +1,167 @@
+/* ════════════════════════════════════════
+   Coding with Love — Home Page CSS
+   ════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #07051A 0%, #0F093A 40%, #1A0F50 70%, #0D0828 100%);
+    min-height: 100vh;
+    color: #e0e0e0;
+    line-height: 1.8;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ── STARS ── */
+.star {
+    position: fixed;
+    border-radius: 50%;
+    background: #fff;
+    animation: twinkle var(--dur, 2.5s) var(--delay, 0s) infinite alternate ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+@keyframes twinkle {
+    from { opacity: var(--min, 0.2); transform: scale(1); }
+    to   { opacity: var(--max, 0.9); transform: scale(1.4); }
+}
+
+/* ── AMBIENT GLOW ── */
+.ambient-glow {
+    position: fixed;
+    top: -100px; right: -50px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle,
+        rgba(167, 139, 250, 0.12) 0%,
+        rgba(139, 92, 246, 0.06) 40%,
+        transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── LAYOUT ── */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ── HEADER ── */
+header { text-align: center; margin-bottom: 64px; }
+
+.logo { font-size: 3.5rem; margin-bottom: 16px; display: block; }
+
+h1 {
+    font-size: 3rem; font-weight: 900;
+    letter-spacing: -1px; color: #fff; margin-bottom: 10px;
+}
+h1 .accent {
+    background: linear-gradient(90deg, #C4B5FD 0%, #F0C060 60%, #FFE4A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline { font-size: 1.1rem; font-weight: 600; color: rgba(255, 255, 255, 0.45); }
+
+/* ── APPS GRID ── */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+
+/* ── APP CARD ── */
+.app-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(167, 139, 250, 0.18);
+    border-radius: 24px;
+    padding: 32px 26px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.app-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(167, 139, 250, 0.4);
+    box-shadow: 0 16px 40px rgba(100, 60, 200, 0.2);
+}
+
+.app-icon { font-size: 3.2rem; margin-bottom: 14px; display: block; }
+
+.app-name {
+    font-size: 1.3rem; font-weight: 800;
+    background: linear-gradient(90deg, #C4B5FD, #F0C060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.app-description {
+    font-size: 0.9rem; font-weight: 600;
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 22px; line-height: 1.6;
+}
+
+.app-links { display: flex; flex-direction: column; gap: 10px; }
+
+.app-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 12px;
+    font-size: 0.88rem; font-weight: 700;
+    background: rgba(167, 139, 250, 0.12);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    transition: background 0.2s, border-color 0.2s;
+}
+.app-links a:hover {
+    background: rgba(167, 139, 250, 0.22);
+    border-color: rgba(167, 139, 250, 0.4);
+    text-decoration: none;
+}
+
+.play-store {
+    background: rgba(52, 168, 83, 0.12) !important;
+    border-color: rgba(52, 168, 83, 0.25) !important;
+}
+.play-store:hover {
+    background: rgba(52, 168, 83, 0.22) !important;
+    border-color: rgba(52, 168, 83, 0.4) !important;
+}
+
+/* ── FOOTER ── */
+footer {
+    margin-top: 72px; padding-top: 32px;
+    border-top: 1px solid rgba(167, 139, 250, 0.15);
+    text-align: center;
+}
+.footer-brand {
+    font-size: 1.1rem; font-weight: 800;
+    background: linear-gradient(90deg, #C4B5FD, #F0C060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; margin-bottom: 6px;
+}
+.footer-sub { font-size: 0.85rem; color: rgba(255, 255, 255, 0.3); font-weight: 600; }
+.footer-sub span { color: #ff6b6b; }
+.footer-contact { margin-top: 14px; }
+.footer-contact a { color: #F0C060; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+.footer-contact a:hover { text-decoration: underline; }
+.footer-copy { margin-top: 14px; color: rgba(255, 255, 255, 0.2); font-size: 0.8rem; font-weight: 600; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .container { padding: 40px 16px 48px; }
+    h1 { font-size: 2.2rem; }
+    .logo { font-size: 2.8rem; }
+}

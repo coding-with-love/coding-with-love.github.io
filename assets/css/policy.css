@@ -1,0 +1,278 @@
+/* ════════════════════════════════════════════
+   Coding with Love — Privacy Policy Shared CSS
+   ════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #07051A 0%, #0F093A 40%, #1A0F50 70%, #0D0828 100%);
+    min-height: 100vh;
+    color: #e0e0e0;
+    line-height: 1.8;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ── STARS ── */
+.star {
+    position: fixed;
+    border-radius: 50%;
+    background: #fff;
+    animation: twinkle var(--dur, 2.5s) var(--delay, 0s) infinite alternate ease-in-out;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes twinkle {
+    from { opacity: var(--min, 0.2); transform: scale(1); }
+    to   { opacity: var(--max, 0.9); transform: scale(1.4); }
+}
+
+/* ── AMBIENT GLOW ── */
+.ambient-glow {
+    position: fixed;
+    top: -100px; right: -50px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle,
+        rgba(167, 139, 250, 0.12) 0%,
+        rgba(139, 92, 246, 0.06) 40%,
+        transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ── LAYOUT ── */
+.container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ── BACK LINK ── */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 100px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background 0.2s, color 0.2s;
+    width: fit-content;
+}
+.back-link:hover { background: rgba(255, 255, 255, 0.12); color: #fff; text-decoration: none; }
+
+/* ── HEADER ── */
+header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+}
+
+.app-emoji {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px; height: 90px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #1E1060, #2D1B8E);
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    font-size: 3rem;
+    margin-bottom: 20px;
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.06),
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(139, 92, 246, 0.25);
+    animation: icon-float 4s infinite ease-in-out;
+}
+@keyframes icon-float {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-6px); }
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 100px;
+    padding: 5px 16px 5px 10px;
+    margin-bottom: 16px;
+}
+.badge-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: #A78BFA;
+    box-shadow: 0 0 8px #A78BFA;
+    animation: pulse-dot 1.8s infinite;
+}
+@keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 6px #A78BFA; }
+    50%       { box-shadow: 0 0 14px #A78BFA, 0 0 24px rgba(167, 139, 250, 0.4); }
+}
+.badge-text {
+    font-size: 11px; font-weight: 800;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.2rem; font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #fff; margin-bottom: 6px;
+}
+.app-name-title {
+    font-size: 1.1rem; font-weight: 700;
+    background: linear-gradient(90deg, #C4B5FD 0%, #F0C060 60%, #FFE4A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+}
+.last-updated { font-size: 0.82rem; color: rgba(255, 255, 255, 0.35); font-weight: 600; }
+
+/* ── SECTION CARDS ── */
+.section-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(167, 139, 250, 0.15);
+    border-radius: 20px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(12px);
+    transition: border-color 0.3s;
+}
+.section-card:hover { border-color: rgba(167, 139, 250, 0.3); }
+
+h2 {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 1.15rem; font-weight: 800;
+    background: linear-gradient(90deg, #C4B5FD, #A78BFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+    letter-spacing: -0.2px;
+}
+h2 .emoji { -webkit-text-fill-color: initial; }
+
+h3 {
+    font-size: 0.95rem; font-weight: 800;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 18px 0 10px;
+}
+
+p { font-size: 0.97rem; color: rgba(255, 255, 255, 0.65); margin-bottom: 12px; font-weight: 600; }
+p strong { color: rgba(255, 255, 255, 0.9); }
+
+ul { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 0.95rem; color: rgba(255, 255, 255, 0.65); font-weight: 600;
+}
+li::before {
+    content: ''; display: inline-block;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #A78BFA; box-shadow: 0 0 6px rgba(167, 139, 250, 0.5);
+    flex-shrink: 0; margin-top: 9px;
+}
+
+/* ── HIGHLIGHT BOX ── */
+.highlight-box {
+    background: rgba(167, 139, 250, 0.08);
+    border: 1px solid rgba(167, 139, 250, 0.2);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 16px 0;
+}
+.highlight-box p { margin-bottom: 0; font-size: 0.9rem; }
+
+/* ── LINKS ── */
+a { color: #F0C060; text-decoration: none; font-weight: 700; }
+a:hover { text-decoration: underline; }
+
+/* ── CONTACT BOX ── */
+.contact-box {
+    background: rgba(240, 192, 96, 0.07);
+    border: 1px solid rgba(240, 192, 96, 0.25);
+    border-radius: 14px;
+    padding: 22px; text-align: center; margin-top: 14px;
+}
+.contact-box p { margin-bottom: 6px; font-size: 1rem; }
+
+/* ── IAP TABLE (BlockZone) ── */
+.iap-table {
+    width: 100%; border-collapse: collapse;
+    margin: 15px 0; font-size: 0.95rem;
+}
+.iap-table th {
+    background: rgba(167, 139, 250, 0.15);
+    color: #C4B5FD;
+    padding: 10px 14px; text-align: left;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+    font-weight: 800;
+}
+.iap-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.1);
+    color: rgba(255, 255, 255, 0.65);
+    font-weight: 600;
+}
+.iap-table tr:last-child td { border-bottom: none; }
+
+/* ── LANGUAGE SWITCHER (BlockZone) ── */
+.lang-switcher {
+    display: flex; justify-content: flex-end;
+    gap: 10px; margin-bottom: 20px;
+}
+.lang-btn {
+    padding: 6px 16px; border-radius: 100px;
+    font-size: 0.85rem; font-weight: 700;
+    text-decoration: none; transition: all 0.2s;
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    font-family: 'Nunito', sans-serif;
+}
+.lang-btn.active { background: rgba(167, 139, 250, 0.25); color: #C4B5FD; }
+.lang-btn:not(.active) { background: transparent; color: rgba(255, 255, 255, 0.4); }
+.lang-btn:not(.active):hover { background: rgba(167, 139, 250, 0.1); color: rgba(255, 255, 255, 0.7); text-decoration: none; }
+
+/* ── FOOTER ── */
+footer {
+    margin-top: 48px; padding-top: 28px;
+    border-top: 1px solid rgba(167, 139, 250, 0.15);
+    text-align: center;
+}
+.footer-brand {
+    font-size: 1rem; font-weight: 800;
+    background: linear-gradient(90deg, #C4B5FD, #F0C060);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; margin-bottom: 6px;
+}
+.footer-sub { font-size: 0.82rem; color: rgba(255, 255, 255, 0.3); font-weight: 600; }
+.footer-sub span { color: #ff6b6b; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .container { padding: 24px 16px 48px; }
+    h1 { font-size: 1.6rem; }
+    .app-emoji { width: 72px; height: 72px; font-size: 2.4rem; }
+    .section-card { padding: 20px 18px; }
+    .iap-table { font-size: 0.85rem; }
+    .iap-table th, .iap-table td { padding: 8px 10px; }
+}
