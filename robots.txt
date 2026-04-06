@@ -1,0 +1,24 @@
+# robots.txt para Coding with Love
+# https://coding-with-love.github.io/
+
+User-agent: *
+Allow: /
+
+# Bloquear archivos internos de Git (aunque GitHub Pages no los expone, es buena práctica)
+Disallow: /.git/
+
+# Bloquear archivos de configuración
+Disallow: /_config.yml
+
+# Permitir todo el contenido público
+Allow: /assets/
+Allow: /sueno-dulce-bebe/
+Allow: /sudoku/
+Allow: /lista-tareas/
+Allow: /2048-gold/
+Allow: /blockzone/
+Allow: /sopa-letras/
+Allow: /.well-known/
+
+# Sitemap
+Sitemap: https://coding-with-love.github.io/sitemap.xml

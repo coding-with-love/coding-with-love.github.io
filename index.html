@@ -1,170 +1,304 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Coding with Love | Apps Android útiles y juegos</title>
-
-    <meta name="description" content="Descubre aplicaciones Android útiles: juegos, productividad y herramientas para tu día a día.">
+    <!-- ═══════════════════════════════════════════════════════════
+         PRIMARY SEO META TAGS
+         ═══════════════════════════════════════════════════════════ -->
+    <title>Coding with Love | Apps Android, Juegos y Productividad 2026</title>
+    <meta name="description" content="Descubre aplicaciones Android útiles creadas con pasión: juegos como Sudoku y 2048, herramientas de productividad y sonidos para bebés. Descarga gratis en Google Play.">
+    <meta name="keywords" content="apps android, juegos android, productividad, sudoku, 2048, sonidos para bebés, ruido blanco, aplicaciones gratuitas, google play, coding with love">
     <meta name="author" content="Coding with Love">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="Spanish">
+    <meta name="geo.region" content="GLOBAL">
+    <meta name="geo.placename" content="Global">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="generator" content="GitHub Pages">
 
+    <!-- ═══════════════════════════════════════════════════════════
+         CANONICAL & ALTERNATE
+         ═══════════════════════════════════════════════════════════ -->
     <link rel="canonical" href="https://coding-with-love.github.io/">
+    <link rel="alternate" hreflang="es" href="https://coding-with-love.github.io/">
+    <link rel="alternate" hreflang="x-default" href="https://coding-with-love.github.io/">
 
-    <!-- SEO extra -->
+    <!-- ═══════════════════════════════════════════════════════════
+         THEME & PERFORMANCE
+         ═══════════════════════════════════════════════════════════ -->
     <meta name="theme-color" content="#0f172a">
-    <meta property="og:locale" content="es_ES">
+    <meta name="msapplication-TileColor" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Coding with Love">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Coding with Love - Apps Android">
-    <meta property="og:description" content="Aplicaciones móviles diseñadas para mejorar tu vida.">
+    <!-- ═══════════════════════════════════════════════════════════
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp)
+         ═══════════════════════════════════════════════════════════ -->
+    <meta property="og:site_name" content="Coding with Love">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Coding with Love | Apps Android, Juegos y Productividad">
+    <meta property="og:description" content="Aplicaciones Android creadas con pasión: juegos, productividad y herramientas para tu día a día. Descarga gratis desde Google Play.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://coding-with-love.github.io/">
     <meta property="og:image" content="https://coding-with-love.github.io/assets/img/preview.png">
+    <meta property="og:image:secure_url" content="https://coding-with-love.github.io/assets/img/preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Coding with Love - Aplicaciones Android útiles y juegos">
 
-    <!-- Twitter -->
+    <!-- ═══════════════════════════════════════════════════════════
+         TWITTER CARD
+         ═══════════════════════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Coding with Love - Apps Android">
-    <meta name="twitter:description" content="Apps útiles y juegos para tu día a día.">
+    <meta name="twitter:site" content="@codingwithlove">
+    <meta name="twitter:creator" content="@codingwithlove">
+    <meta name="twitter:title" content="Coding with Love | Apps Android, Juegos y Productividad">
+    <meta name="twitter:description" content="Apps Android útiles: juegos, productividad y herramientas para tu día a día.">
+    <meta name="twitter:image" content="https://coding-with-love.github.io/assets/img/preview.png">
+    <meta name="twitter:image:alt" content="Coding with Love - Aplicaciones Android">
 
-    <!-- Favicon -->
-    <link rel="icon" href="/assets/img/logo.ico">
-    <link rel="apple-touch-icon" href="/assets/img/logo.png">
+    <!-- ═══════════════════════════════════════════════════════════
+         FAVICONS
+         ═══════════════════════════════════════════════════════════ -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.png">
+    <link rel="mask-icon" href="./assets/img/logo.png" color="#0f172a">
 
-    <!-- Performance -->
-    <link rel="preload" href="/assets/css/home.css" as="style">
-    <link rel="stylesheet" href="/assets/css/home.css">
+    <!-- ═══════════════════════════════════════════════════════════
+         PERFORMANCE: PRELOAD & PRECONNECT
+         ═══════════════════════════════════════════════════════════ -->
+    <link rel="preload" href="./assets/css/home.css" as="style">
+    <link rel="preload" href="./assets/js/stars.js" as="script">
+    <link rel="dns-prefetch" href="//play.google.com">
+    <link rel="preconnect" href="https://play.google.com" crossorigin>
+    <link rel="stylesheet" href="./assets/css/home.css">
 
+    <!-- ═══════════════════════════════════════════════════════════
+         VERIFICATION
+         ═══════════════════════════════════════════════════════════ -->
     <meta name="google-site-verification" content="oR9tPloihoDYSEtbpbL11ox0m5ttq3cx7MIX-VmAxI4">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
     <div class="ambient-glow"></div>
 
     <div class="container">
-        <header>
-            <span class="logo">💻❤️</span>
-            <h1>Coding <span class="accent">with Love</span></h1>
-            <p class="tagline">Aplicaciones creadas con pasion para mejorar tu vida</p>
+        <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+            <img src="/assets/img/logo.png" alt="Coding with Love Logo" class="logo-img" width="64" height="64" loading="eager" fetchpriority="high">
+            <h1 itemprop="headline">Coding <span class="accent">with Love</span></h1>
+            <p class="tagline" itemprop="description">Aplicaciones Android creadas con pasión para mejorar tu vida</p>
         </header>
 
-        <main>
-            <div class="apps-grid">
+        <main role="main" itemprop="mainContentOfPage">
+            <section class="apps-grid" aria-label="Aplicaciones publicadas">
 
                 <!-- App 1: Sueno Dulce Bebe -->
-                <div class="app-card">
-                    <span class="app-icon">🌙👶💤</span>
-                    <h2 class="app-name">Sueno Dulce Bebe</h2>
-                    <p class="app-description">
-                        Sonidos relajantes y ruido blanco para ayudar a tu bebe a dormir placidamente.
+                <article class="app-card" itemscope itemtype="https://schema.org/MobileApplication">
+                    <meta itemprop="applicationCategory" content="LifestyleApplication">
+                    <meta itemprop="operatingSystem" content="Android">
+                    <meta itemprop="offers" content="Free">
+                    <span class="app-icon" role="img" aria-label="Sueño dulce bebé icono">🌙👶💤</span>
+                    <h2 class="app-name" itemprop="name">Sueño Dulce Bebé</h2>
+                    <p class="app-description" itemprop="description">
+                        Sonidos relajantes y ruido blanco para ayudar a tu bebé a dormir plácidamente.
                     </p>
                     <div class="app-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.suenodulce.bebe" class="play-store" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.suenodulce.bebe" class="play-store" target="_blank" rel="noopener noreferrer" itemprop="url" aria-label="Descargar Sueño Dulce Bebé en Google Play">
                             📱 Descargar en Google Play
                         </a>
-                        <a href="./sueno-dulce-bebe/">🔒 Politica de Privacidad</a>
+                        <a href="./sueno-dulce-bebe/" rel="nofollow" aria-label="Política de privacidad de Sueño Dulce Bebé">🔒 Política de Privacidad</a>
                     </div>
-                </div>
+                </article>
 
                 <!-- App 2: Sudoku Pro -->
-                <div class="app-card">
-                    <span class="app-icon">🔢🧩✏️</span>
-                    <h2 class="app-name">Sudoku Pro</h2>
-                    <p class="app-description">
-                        Pon a prueba tu logica con este clasico juego de Sudoku. Multiples niveles de dificultad para todos.
+                <article class="app-card" itemscope itemtype="https://schema.org/MobileApplication">
+                    <meta itemprop="applicationCategory" content="GameApplication">
+                    <meta itemprop="operatingSystem" content="Android">
+                    <meta itemprop="offers" content="Free">
+                    <span class="app-icon" role="img" aria-label="Sudoku Pro icono">🔢🧩✏️</span>
+                    <h2 class="app-name" itemprop="name">Sudoku Pro</h2>
+                    <p class="app-description" itemprop="description">
+                        Pon a prueba tu lógica con este clásico juego de Sudoku. Múltiples niveles de dificultad para todos.
                     </p>
                     <div class="app-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.sudokupro.app" class="play-store" target="_blank">
+                        <a href="https://play.google.com/store/apps/details?id=com.sudokupro.app" class="play-store" target="_blank" rel="noopener noreferrer" itemprop="url" aria-label="Descargar Sudoku Pro en Google Play">
                             📱 Descargar en Google Play
                         </a>
-                        <a href="./sudoku/privacy-policy/">🔒 Politica de Privacidad</a>
+                        <a href="./sudoku/privacy-policy/" rel="nofollow" aria-label="Política de privacidad de Sudoku Pro">🔒 Política de Privacidad</a>
                     </div>
-                </div>
+                </article>
 
-            </div>
+            </section>
 
             <!-- ── PRÓXIMAMENTE ── -->
-            <div class="coming-soon-section">
+            <section class="coming-soon-section" aria-label="Aplicaciones próximamente">
                 <h2 class="coming-soon-title">⏳ Próximamente</h2>
                 <div class="apps-grid">
 
                     <!-- Lista de Tareas -->
-                    <div class="app-card coming-soon-card">
-                        <span class="app-icon">✅📝📋</span>
-                        <h2 class="app-name">Lista de Tareas</h2>
-                        <p class="app-description">
-                            Organiza tu dia con esta app minimalista de gestion de tareas.
+                    <article class="app-card coming-soon-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="applicationCategory" content="ProductivityApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <span class="app-icon" role="img" aria-label="Lista de Tareas icono">✅📝📋</span>
+                        <h2 class="app-name" itemprop="name">Lista de Tareas</h2>
+                        <p class="app-description" itemprop="description">
+                            Organiza tu día con esta app minimalista de gestión de tareas.
                         </p>
                         <div class="app-links">
-                            <a href="./lista-tareas/">🔒 Politica de Privacidad</a>
+                            <a href="./lista-tareas/" rel="nofollow" aria-label="Política de privacidad de Lista de Tareas">🔒 Política de Privacidad</a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- 2048 Gold Edition -->
-                    <div class="app-card coming-soon-card">
-                        <span class="app-icon">🎮🔢✨</span>
-                        <h2 class="app-name">2048 Gold Edition</h2>
-                        <p class="app-description">
-                            Puzzle numerico 2048 con diseno premium oscuro y animaciones fluidas.
+                    <article class="app-card coming-soon-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="applicationCategory" content="GameApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <span class="app-icon" role="img" aria-label="2048 Gold Edition icono">🎮🔢✨</span>
+                        <h2 class="app-name" itemprop="name">2048 Gold Edition</h2>
+                        <p class="app-description" itemprop="description">
+                            Puzzle numérico 2048 con diseño premium oscuro y animaciones fluidas.
                         </p>
                         <div class="app-links">
-                            <a href="./2048-gold/privacy-policy/">🔒 Politica de Privacidad</a>
+                            <a href="./2048-gold/privacy-policy/" rel="nofollow" aria-label="Política de privacidad de 2048 Gold Edition">🔒 Política de Privacidad</a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- BlockZone Puzzle Game -->
-                    <div class="app-card coming-soon-card">
-                        <span class="app-icon">🧩🟦🟩</span>
-                        <h2 class="app-name">BlockZone — Puzzle Game</h2>
-                        <p class="app-description">
-                            Arrastra y coloca bloques para completar lineas en este adictivo puzzle de estrategia.
+                    <article class="app-card coming-soon-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="applicationCategory" content="GameApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <span class="app-icon" role="img" aria-label="BlockZone Puzzle Game icono">🧩🟦🟩</span>
+                        <h2 class="app-name" itemprop="name">BlockZone — Puzzle Game</h2>
+                        <p class="app-description" itemprop="description">
+                            Arrastra y coloca bloques para completar líneas en este adictivo puzzle de estrategia.
                         </p>
                         <div class="app-links">
-                            <a href="./blockzone/privacy-policy/">🔒 Politica de Privacidad</a>
+                            <a href="./blockzone/privacy-policy/" rel="nofollow" aria-label="Política de privacidad de BlockZone">🔒 Política de Privacidad</a>
                         </div>
-                    </div>
+                    </article>
 
                     <!-- Sopa de Letras Lite -->
-                    <div class="app-card coming-soon-card">
-                        <span class="app-icon">🔤🔍📖</span>
-                        <h2 class="app-name">Sopa de Letras - Lite</h2>
-                        <p class="app-description">
-                            Encuentra palabras ocultas en este clasico juego de sopa de letras con multiples temas.
+                    <article class="app-card coming-soon-card" itemscope itemtype="https://schema.org/MobileApplication">
+                        <meta itemprop="applicationCategory" content="GameApplication">
+                        <meta itemprop="operatingSystem" content="Android">
+                        <span class="app-icon" role="img" aria-label="Sopa de Letras Lite icono">🔤🔍📖</span>
+                        <h2 class="app-name" itemprop="name">Sopa de Letras - Lite</h2>
+                        <p class="app-description" itemprop="description">
+                            Encuentra palabras ocultas en este clásico juego de sopa de letras con múltiples temas.
                         </p>
                         <div class="app-links">
-                            <a href="./sopa-letras/privacy-policy/">🔒 Politica de Privacidad</a>
+                            <a href="./sopa-letras/privacy-policy/" rel="nofollow" aria-label="Política de privacidad de Sopa de Letras">🔒 Política de Privacidad</a>
                         </div>
-                    </div>
+                    </article>
 
                 </div>
-            </div>
+            </section>
 
         </main>
 
-        <footer>
-            <div class="footer-brand">Coding with Love</div>
+        <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+            <div class="footer-brand" itemprop="name">Coding with Love</div>
             <div class="footer-sub">Hecho con <span>❤</span> para ti</div>
             <div class="footer-contact">
-                <p>📧 <a href="mailto:navisolutions94@gmail.com">navisolutions94@gmail.com</a></p>
+                <p>📧 <a href="mailto:navisolutions94@gmail.com" itemprop="email">navisolutions94@gmail.com</a></p>
             </div>
             <p class="footer-copy">© 2026 Coding with Love. Todos los derechos reservados.</p>
         </footer>
     </div>
 
-    <script src="./assets/js/stars.js"></script>
+    <script src="./assets/js/stars.js" defer></script>
 
-<!-- Structured Data JSON-LD -->
+<!-- ═══════════════════════════════════════════════════════════
+     STRUCTURED DATA: JSON-LD
+     ═══════════════════════════════════════════════════════════ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Coding with Love",
-  "url": "https://coding-with-love.github.io/",
-  "logo": "https://coding-with-love.github.io/assets/img/logo.png"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://coding-with-love.github.io/#organization",
+      "name": "Coding with Love",
+      "url": "https://coding-with-love.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://coding-with-love.github.io/assets/img/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://coding-with-love.github.io/assets/img/preview.png",
+      "email": "navisolutions94@gmail.com",
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://coding-with-love.github.io/#website",
+      "url": "https://coding-with-love.github.io/",
+      "name": "Coding with Love",
+      "description": "Aplicaciones Android útiles: juegos, productividad y herramientas para tu día a día.",
+      "publisher": {
+        "@id": "https://coding-with-love.github.io/#organization"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://coding-with-love.github.io/#webpage",
+      "url": "https://coding-with-love.github.io/",
+      "name": "Coding with Love | Apps Android, Juegos y Productividad 2026",
+      "description": "Descubre aplicaciones Android útiles creadas con pasión: juegos como Sudoku y 2048, herramientas de productividad y sonidos para bebés.",
+      "isPartOf": {
+        "@id": "https://coding-with-love.github.io/#website"
+      },
+      "about": {
+        "@id": "https://coding-with-love.github.io/#organization"
+      },
+      "inLanguage": "es"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Sueño Dulce Bebé",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.suenodulce.bebe",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "100"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Sudoku Pro",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.sudokupro.app"
+    }
+  ]
 }
 </script>
-<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
 </body>
 </html>

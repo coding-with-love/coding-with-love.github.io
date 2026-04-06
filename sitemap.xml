@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- HOME -->
+  <!-- ═══════════════════════════════════════════════
+       HOME
+       ═══════════════════════════════════════════════ -->
   <url>
     <loc>https://coding-with-love.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://coding-with-love.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://coding-with-love.github.io/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://coding-with-love.github.io/assets/img/preview.png</image:loc>
+      <image:title>Coding with Love - Apps Android</image:title>
+      <image:caption>Aplicaciones Android útiles y juegos creados con pasión</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://coding-with-love.github.io/assets/img/logo.png</image:loc>
+      <image:title>Coding with Love Logo</image:title>
+    </image:image>
   </url>
 
-  <!-- APPS PUBLICADAS -->
+  <!-- ═══════════════════════════════════════════════
+       APPS PUBLICADAS
+       ═══════════════════════════════════════════════ -->
   <url>
     <loc>https://coding-with-love.github.io/sueno-dulce-bebe/</loc>
     <changefreq>monthly</changefreq>
@@ -18,10 +35,12 @@
   <url>
     <loc>https://coding-with-love.github.io/sudoku/privacy-policy/</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 
-  <!-- PRÓXIMAMENTE (YA ENLAZADAS, IGUAL INDEXAN) -->
+  <!-- ═══════════════════════════════════════════════
+       APPS PRÓXIMAMENTE (POLÍTICAS DE PRIVACIDAD)
+       ═══════════════════════════════════════════════ -->
   <url>
     <loc>https://coding-with-love.github.io/lista-tareas/</loc>
     <changefreq>monthly</changefreq>
@@ -31,19 +50,25 @@
   <url>
     <loc>https://coding-with-love.github.io/2048-gold/privacy-policy/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://coding-with-love.github.io/blockzone/privacy-policy/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://coding-with-love.github.io/blockzone/privacy-policy/es/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://coding-with-love.github.io/sopa-letras/privacy-policy/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 
 </urlset>

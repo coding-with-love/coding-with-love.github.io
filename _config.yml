@@ -1,1 +1,18 @@
-include: [".well-known"]
+# Include hidden files
+include: [".well-known", "robots.txt"]
+
+# SEO defaults
+title: "Coding with Love"
+description: "Aplicaciones Android útiles: juegos, productividad y herramientas para tu día a día."
+url: "https://coding-with-love.github.io"
+baseurl: ""
+lang: "es"
+
+# Build settings
+markdown: kramdown
+
+# Exclude from build
+exclude:
+  - .git/
+  - README.md
+  - AGENTS.md
