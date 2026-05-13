@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Politica de Privacidad - Sueno Dulce Bebe</title>
+    <title>Politica de Privacidad - A dormir Bebe - Musica Relax</title>
     <link rel="stylesheet" href="../assets/css/policy.css">
 </head>
 <body>
@@ -14,15 +14,15 @@
         <header>
             <div class="app-emoji">🌙</div>
             <div class="badge"><div class="badge-dot"></div><span class="badge-text">Politica de Privacidad</span></div>
-            <h1>Sueno Dulce Bebe</h1>
+            <h1>A dormir Bebe - Musica Relax</h1>
             <div class="app-name-title">Coding with Love</div>
-            <div class="last-updated">Ultima actualizacion: Enero 2025</div>
+            <div class="last-updated" id="lastUpdated">Ultima actualizacion: <span id="updateDate"></span></div>
         </header>
 
         <main>
             <div class="section-card">
                 <p>
-                    En <strong>Coding with Love</strong>, desarrolladores de <strong>Sueno Dulce Bebe</strong>,
+                    En <strong>Coding with Love</strong>, desarrolladores de <strong>A dormir Bebe - Musica Relax</strong>,
                     nos tomamos muy en serio la privacidad de nuestros usuarios. Esta politica describe
                     como recopilamos, usamos y protegemos tu informacion al usar nuestra aplicacion.
                 </p>
@@ -40,24 +40,36 @@
                 </ul>
                 <h3>Recopilacion automatica</h3>
                 <ul>
-                    <li>Identificadores de publicidad (para anuncios personalizados)</li>
+                    <li>Identificador de publicidad (Advertising ID) y otros identificadores del dispositivo (Android ID)</li>
                     <li>Informacion basica del dispositivo (modelo, version del SO)</li>
-                    <li>Datos de uso de la aplicacion (para mejorar la experiencia)</li>
+                    <li>Direccion IP</li>
+                    <li>Interacciones con anuncios</li>
                 </ul>
             </div>
 
             <div class="section-card">
                 <h2><span class="emoji">📢</span> Publicidad</h2>
-                <p>Nuestra aplicacion muestra anuncios de <strong>Google AdMob</strong>. AdMob puede recopilar datos para mostrar anuncios personalizados, incluyendo:</p>
+                <p>Nuestra aplicacion muestra anuncios de <strong>Google AdMob</strong>. AdMob puede recopilar y compartir datos para mostrar anuncios personalizados, incluyendo:</p>
                 <ul>
-                    <li>Identificador de publicidad del dispositivo</li>
-                    <li>Interacciones con anuncios</li>
-                    <li>Ubicacion aproximada basada en IP</li>
+                    <li>Identificador de publicidad del dispositivo (Advertising ID)</li>
+                    <li>Identificadores del dispositivo (Android ID)</li>
+                    <li>Direccion IP</li>
+                    <li>Interacciones con anuncios (clics, impresiones)</li>
+                    <li>Informacion general del dispositivo (modelo, sistema operativo, resolucion de pantalla)</li>
                 </ul>
                 <div class="highlight-box">
-                    <p><strong>Nota:</strong> Puedes optar por no recibir anuncios personalizados ajustando la configuracion de publicidad de tu dispositivo o viendo un anuncio recompensado para desactivar la publicidad temporalmente.</p>
+                    <p><strong>Nota:</strong> Puedes optar por no recibir anuncios personalizados ajustando la configuracion de publicidad de tu dispositivo o desde <a href="https://adssettings.google.com/" target="_blank">configuracion de anuncios de Google</a>.</p>
                 </div>
-                <p>Mas informacion: <a href="https://policies.google.com/privacy" target="_blank">Politica de Privacidad de Google</a></p>
+                <p>Mas informacion: <a href="https://policies.google.com/privacy" target="_blank">Politica de Privacidad de Google</a> y <a href="https://support.google.com/googleplay/android-developer/answer/10788701" target="_blank">Politica de Datos de Google Play</a></p>
+            </div>
+
+            <div class="section-card">
+                <h2><span class="emoji">🔗</span> Servicios de Terceros</h2>
+                <p>Nuestra aplicacion utiliza los siguientes servicios de terceros que pueden recopilar datos segun sus propias politicas de privacidad:</p>
+                <ul>
+                    <li><strong>Google AdMob</strong> - Publicidad (<a href="https://policies.google.com/privacy" target="_blank">Politica de Privacidad</a>)</li>
+                </ul>
+                <p>Estos servicios tienen sus propias politicas de privacidad y pueden recopilar identificadores de dispositivo con fines publicitarios.</p>
             </div>
 
             <div class="section-card">
@@ -86,15 +98,21 @@
 
             <div class="section-card">
                 <h2><span class="emoji">✅</span> Tu Consentimiento</h2>
-                <p>Al utilizar Sueno Dulce Bebe, aceptas los terminos de esta politica de privacidad.</p>
+                <p>Al utilizar A dormir Bebe - Musica Relax, aceptas los terminos de esta politica de privacidad.</p>
             </div>
         </main>
 
         <footer>
             <div class="footer-brand">Coding with Love</div>
-            <div class="footer-sub">Hecho con <span>❤</span> para las familias · © 2025</div>
+            <div class="footer-sub">Hecho con <span>❤</span> para las familias · © <span id="copyrightYear"></span></div>
         </footer>
     </div>
     <script src="../assets/js/stars.js"></script>
+    <script>
+        const months = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+        const now = new Date();
+        document.getElementById('updateDate').textContent = months[now.getMonth()] + ' ' + now.getFullYear();
+        document.getElementById('copyrightYear').textContent = now.getFullYear();
+    </script>
 </body>
 </html>
