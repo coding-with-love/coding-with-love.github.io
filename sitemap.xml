@@ -38,6 +38,12 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://coding-with-love.github.io/hablapago/privacy-policy/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- ═══════════════════════════════════════════════
        APPS PRÓXIMAMENTE (POLÍTICAS DE PRIVACIDAD)
        ═══════════════════════════════════════════════ -->
